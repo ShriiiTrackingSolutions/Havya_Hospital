@@ -647,7 +647,7 @@ align-items: center;
   border-radius: 4px;
   color: #ffffff;
   font-weight: 600;
-  min-width: 136px;
+  min-width: 176px;
   transition: 0.3s ease-in-out;
 }
 .trustBuilding .nav-pills .nav-link:hover{
