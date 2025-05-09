@@ -7,8 +7,24 @@ document.querySelector(".year").innerHTML= new Date().getFullYear()
 
 // HEADER
 document.getElementById("header").innerHTML = `
-  <nav class="mynavbar bg-light">
-              <div class="container-fluid header">
+   <div class="miniHeader d-none d-sm-block">
+            <div class="container">
+<div class="row">
+  <div class="col-auto topheadLinks">
+    <a target="_blank" href="tel:+916354710794"><i class="fa-solid fa-phone" aria-hidden="true"></i> +91 63547 10794</a>
+    <a target="_blank" href="https://maps.app.goo.gl/EMtQmUV8unVQYXWE8"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Vadodara</a>
+  </div>
+  <div class="col-auto topheadSocial">
+    <a href=""><i class="fa-brands fa-facebook"></i></a>
+    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+</div>
+            </div>
+          </div>
+        <div id="main-header">
+            <nav class="mynavbar bg-light">
+              <div class="container header">
                 <a class="brandLogo" href="index.html">
                   <img src="image/Havya_Logo.webp" alt="Havya Logo">
                 </a>
@@ -23,20 +39,18 @@ document.getElementById("header").innerHTML = `
                   <li class="navLi">
                     <a href="#" class="navLink">About 
                       <span class="toggleSub">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
-                          <path fill="currentColor" fill-rule="evenodd" d="M8 1.75a.75.75 0 0 1 .75.75v4.75h4.75a.75.75 0 0 1 0 1.5H8.75v4.75a.75.75 0 0 1-1.5 0V8.75H2.5a.75.75 0 0 1 0-1.5h4.75V2.5A.75.75 0 0 1 8 1.75" clip-rule="evenodd"/>
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 10l6 6l6-6z"/></svg>
                       </span>
                     </a>
                     <ul class="dropdownList">
-                      <li class="navLi"><a href="#" class="navLink">Havya Profile</a></li>
+                      <li class="navLi"><a href="havyaProfile.html" class="navLink">About Havya</a></li>
                       <li class="navLi"><a href="#" class="navLink">link 2</a></li>
                       <li class="navLi"><a href="#" class="navLink">link 3</a></li>
                     </ul>
                   </li>
                   <li class="navLi">
                     <a href="#" class="navLink">Services 
-                      <span class="toggleSub"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M8 1.75a.75.75 0 0 1 .75.75v4.75h4.75a.75.75 0 0 1 0 1.5H8.75v4.75a.75.75 0 0 1-1.5 0V8.75H2.5a.75.75 0 0 1 0-1.5h4.75V2.5A.75.75 0 0 1 8 1.75" clip-rule="evenodd"/></svg></span>
+                      <span class="toggleSub"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 10l6 6l6-6z"/></svg></span>
                     </a>
                     <ul class="dropdownList">
                       <li class="navLi"><a href="#" class="navLink">link 1</a></li>
@@ -44,21 +58,59 @@ document.getElementById("header").innerHTML = `
                       <li class="navLi"><a href="#" class="navLink">link 3</a></li>
                     </ul>
                   </li>
-                  <li class="navLi">
-                    <a href="#" class="navLink">Classes 
-                      <span class="toggleSub"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M8 1.75a.75.75 0 0 1 .75.75v4.75h4.75a.75.75 0 0 1 0 1.5H8.75v4.75a.75.75 0 0 1-1.5 0V8.75H2.5a.75.75 0 0 1 0-1.5h4.75V2.5A.75.75 0 0 1 8 1.75" clip-rule="evenodd"/></svg></span>
-                    </a>
-                    <ul class="dropdownList">
-                      <li class="navLi"><a href="#" class="navLink">link 1</a></li>
-                      <li class="navLi"><a href="#" class="navLink">link 2</a></li>
-                      <li class="navLi"><a href="#" class="navLink">link 3</a></li>
-                    </ul>
-                  </li>
+                 
+                  <li class="navLi"><a href="#" class="navLink">Patient Testimonials</a></li>
                   <li class="navLi"><a href="#" class="navLink">Contact</a></li>
                 </ul>
-                <a href="" class="btnoutline d-none d-sm-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><path d="M9 10c0 3.866 3 7 3 7s3-3.134 3-7s-3-7-3-7s-3 3.134-3 7"/><path d="M6.33 8C4.115 7.046 2 7 2 7s.096 4.381 2.857 7.143S12 17 12 17s4.381-.096 7.143-2.857S22 7 22 7s-2.114.046-4.33 1m-5.65 9c-.166 1.333.64 4 3.494 4c1.995 0 2.993-2 6.486 0c-.4-2-1.2-3.28-2.367-4m-7.654 0c.167 1.333-.64 4-3.492 4C6.49 21 5.493 19 2 21c.4-2 1.2-3.28 2.367-4"/></g></svg>Book Now</a>
+    
               </div>
             </nav>
+       
+        </div>
+
+         <script>
+          document.addEventListener("DOMContentLoaded", function () {
+              // Mobile Navigation Toggle
+              const toggleBtn = document.querySelector(".navToggle");
+              const navbarNav = document.querySelector(".navMenu");
+              const navCloseBtn = document.querySelector(".btn-nav-close");
+          
+              toggleBtn.addEventListener("click", () => {
+                  navbarNav.classList.toggle("active");
+              });
+          
+              navCloseBtn.addEventListener("click", () => {
+                  navbarNav.classList.remove("active");
+              });
+          
+              // Submenu Toggle in Mobile (Auto-close previous)
+              const dropdownToggles = document.querySelectorAll(".navLi > a > .toggleSub");
+              const allSubmenus = document.querySelectorAll(".dropdownList");
+          
+              dropdownToggles.forEach((toggle) => {
+                  toggle.addEventListener("click", function (event) {
+                      event.preventDefault(); // Prevent navigation
+                      event.stopPropagation(); // Prevent event bubbling to parent <a> tag
+                      
+                      const parentLi = this.closest(".navLi");
+                      const submenu = parentLi.querySelector(".dropdownList");
+          
+                      if (submenu) {
+                          // Close all other submenus
+                          allSubmenus.forEach((menu) => {
+                              if (menu !== submenu) {
+                                  menu.classList.remove("open");
+                              }
+                          });
+          
+                          // Toggle the clicked submenu
+                          submenu.classList.toggle("open");
+                      }
+                  });
+              });
+          });
+          
+          </script>
 `;
 
 // FOOTER
@@ -69,28 +121,26 @@ document.getElementById("footer").innerHTML = `
             <!-- Company Info -->
             <div class="col-lg-auto col-sm-6 mb-4 mb-md-0">
               <a class="footer-brand" href="index.html">
-                <img loading="lazy" src="image/Havya_Logo.webp" alt="Havya Logo">
+                <img loading="lazy" src="image/Havya_Logo.webp" alt="KADS">
               </a>
               <ul class="contact-info">
                 <li>
-                  <a class="locationLink" target="_blank" href="#">
+                  <a class="locationLink footerLinks" target="_blank" href="https://maps.app.goo.gl/EMtQmUV8unVQYXWE8">
                     <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
                     <A1-TF-25>
                       <pre class="mb-0">
-TF-A1-22, Akshar Pavilion Mall,
-Near Priya Cinema,
-Vasna Bhyali Main Road, 
-Vadodara,391410
-</pre>
+TF-A1-22, Akshar Pavilion Mall, 
+Near Priya Cinema,Vasna Bhyali
+Main Road, Vadodara,391410</pre>
                   </a>
                 </li>
                 <li>
-                  <a href="tel:+916354710794">
-                    <i class="fa-solid fa-phone"></i>+91 6354 710 794</a>
+                  <a href="tel:+916354710794" class="footerLinks">
+                    <i class="fa-solid fa-phone"></i>+91 63547 10794</a>
                 </li>
                 <li>
-                  <a class="emailAnchor" href="mailto:Havya@hospital.com">
-                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>Havya@hospital.com</a>
+                  <a class="emailAnchor footerLinks" href="mailto:havya@hgsaj.com">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>havya@hgsaj.com</a>
                 </li>
               </ul>
               <div class="social-icons mt-3">
@@ -106,23 +156,23 @@ Vadodara,391410
               <h5 class="fourthH centerStyle">Quick Links</h5>
               <ul>
                 <li>
-                  <a href="index.html">
+                  <a class="footerLinks" href="index.html">
                     <i class="fa-solid fa-circle-chevron-right"></i>Home </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a class="footerLinks" href="#">
                     <i class="fa-solid fa-circle-chevron-right"></i>About</a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a class="footerLinks" href="#">
                     <i class="fa-solid fa-circle-chevron-right"></i>Service </a>
                 </li>
                 <li>
-                  <a href="gallery.html">
-                    <i class="fa-solid fa-circle-chevron-right"></i>Classes </a>
+                  <a class="footerLinks" href="#">
+                    <i class="fa-solid fa-circle-chevron-right"></i>Testimonials </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a class="footerLinks" href="#">
                     <i class="fa-solid fa-circle-chevron-right"></i>Contact </a>
                 </li>
               </ul>
@@ -131,27 +181,27 @@ Vadodara,391410
               <h5 class="fourthH centerStyle">Explore More</h5>
               <ul>
                 <li>
-                  <a href="#">
+                  <a class="footerLinks" href="#">
                     <i class="fa-solid fa-circle-chevron-right"></i>Link 1 will be here</a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a class="footerLinks" href="#">
                     <i class="fa-solid fa-circle-chevron-right"></i>Link 2 will be here</a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a class="footerLinks" href="#">
                     <i class="fa-solid fa-circle-chevron-right"></i>Link 3 will be here</a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a class="footerLinks" href="#">
                     <i class="fa-solid fa-circle-chevron-right"></i>Link 4 will be here</a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a class="footerLinks" href="#">
                     <i class="fa-solid fa-circle-chevron-right"></i>Link 5 will be here</a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a class="footerLinks" href="#">
                     <i class="fa-solid fa-circle-chevron-right"></i>Link 6 will be here</a>
                 </li>
                 
@@ -161,27 +211,27 @@ Vadodara,391410
               <h5 class="fourthH centerStyle">Explore More</h5>
               <ul>
                 <li>
-                  <a href="#">
+                  <a class="footerLinks" href="#">
                     <i class="fa-solid fa-circle-chevron-right"></i>Link 1 will be here</a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a class="footerLinks" href="#">
                     <i class="fa-solid fa-circle-chevron-right"></i>Link 2 will be here</a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a class="footerLinks" href="#">
                     <i class="fa-solid fa-circle-chevron-right"></i>Link 3 will be here</a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a class="footerLinks" href="#">
                     <i class="fa-solid fa-circle-chevron-right"></i>Link 4 will be here</a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a class="footerLinks" href="#">
                     <i class="fa-solid fa-circle-chevron-right"></i>Link 5 will be here</a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a class="footerLinks" href="#">
                     <i class="fa-solid fa-circle-chevron-right"></i>Link 6 will be here</a>
                 </li>
                 
@@ -206,7 +256,7 @@ Vadodara,391410
             </div>
           </div>
         </div>
-      </div> 
+      </div>
           `;
           
          
