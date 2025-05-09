@@ -1,14 +1,43 @@
-$(function(){var e=["https://web.whatsapp.com/send?phone=916354710794","https://api.whatsapp.com/send?phone=916354710794"];function t(){var t=767.98>$(window).width();$(".set-url-target").attr("href",e[t?1:0])}$(window).on("resize",function(){clearTimeout(this.resizeTimer),this.resizeTimer=setTimeout(t,200)}).trigger("resize")});
 
+// WhatsApp URL Adjuster (Responsive)
+(function () {
+  const whatsappLinks = [
+    "https://web.whatsapp.com/send?phone=916354710794",
+    "https://api.whatsapp.com/send?phone=916354710794"
+  ];
 
-document.querySelector(".year").innerHTML= new Date().getFullYear()
+  function updateWhatsAppLink() {
+    const isMobile = window.innerWidth <= 767.98;
+    document.querySelectorAll(".set-url-target").forEach(el =>
+      el.setAttribute("href", whatsappLinks[isMobile ? 1 : 0])
+    );
+  }
 
+  let resizeTimer;
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(updateWhatsAppLink, 200);
+  });
 
+  updateWhatsAppLink(); // Call on load
+})();
 
-// HEADER
-document.getElementById("header").innerHTML = `
-   <div class="miniHeader d-none d-sm-block">
+// DOM Ready
+document.addEventListener("DOMContentLoaded", () => {
+  loadHeaderFooter(() => {
+    highlightActiveLink();
+    initHeaderBehavior();
+    initMobileNavToggle();
+    document.querySelector(".year").textContent = new Date().getFullYear();
+  });
+});
+
+// Load Header and Footer
+function loadHeaderFooter(callback) {
+  document.getElementById("header").innerHTML = ` <div class="miniHeader d-none d-sm-block">
             <div class="container">
+
+            
 <div class="row">
   <div class="col-auto topheadLinks">
     <a target="_blank" href="tel:+916354710794"><i class="fa-solid fa-phone" aria-hidden="true"></i> +91 63547 10794</a>
@@ -44,7 +73,7 @@ document.getElementById("header").innerHTML = `
                     </a>
                     <ul class="dropdownList">
                       <li class="navLi"><a href="havyaProfile.html" class="navLink">About Havya</a></li>
-                      <li class="navLi"><a href="#" class="navLink">link 2</a></li>
+                      <li class="navLi"><a href="meetOurDoctors.html" class="navLink">Meet Our Doctors</a></li>
                       <li class="navLi"><a href="#" class="navLink">link 3</a></li>
                     </ul>
                   </li>
@@ -67,55 +96,8 @@ document.getElementById("header").innerHTML = `
             </nav>
        
         </div>
-
-         <script>
-          document.addEventListener("DOMContentLoaded", function () {
-              // Mobile Navigation Toggle
-              const toggleBtn = document.querySelector(".navToggle");
-              const navbarNav = document.querySelector(".navMenu");
-              const navCloseBtn = document.querySelector(".btn-nav-close");
-          
-              toggleBtn.addEventListener("click", () => {
-                  navbarNav.classList.toggle("active");
-              });
-          
-              navCloseBtn.addEventListener("click", () => {
-                  navbarNav.classList.remove("active");
-              });
-          
-              // Submenu Toggle in Mobile (Auto-close previous)
-              const dropdownToggles = document.querySelectorAll(".navLi > a > .toggleSub");
-              const allSubmenus = document.querySelectorAll(".dropdownList");
-          
-              dropdownToggles.forEach((toggle) => {
-                  toggle.addEventListener("click", function (event) {
-                      event.preventDefault(); // Prevent navigation
-                      event.stopPropagation(); // Prevent event bubbling to parent <a> tag
-                      
-                      const parentLi = this.closest(".navLi");
-                      const submenu = parentLi.querySelector(".dropdownList");
-          
-                      if (submenu) {
-                          // Close all other submenus
-                          allSubmenus.forEach((menu) => {
-                              if (menu !== submenu) {
-                                  menu.classList.remove("open");
-                              }
-                          });
-          
-                          // Toggle the clicked submenu
-                          submenu.classList.toggle("open");
-                      }
-                  });
-              });
-          });
-          
-          </script>
-`;
-
-// FOOTER
-document.getElementById("footer").innerHTML = `
-  <div class="container">
+`; // Keep your current header HTML here
+  document.getElementById("footer").innerHTML = `<div class="container">
         <div class="footWrap defaultPadding">
           <div class="row">
             <!-- Company Info -->
@@ -256,33 +238,67 @@ Main Road, Vadodara,391410</pre>
             </div>
           </div>
         </div>
-      </div>
-          `;
-          
-         
-// Active Link Highlighter
-function highlightActiveLink() {
-  const currentFile = (window.location.pathname.split('/').pop() || 'index.html').split('?')[0];
-  document.querySelectorAll('.navLink').forEach(link => {
-    const href = link.getAttribute('href')?.split('?')[0];
-    if (!href || href === '#') return;
+      </div> `; // Keep your current footer HTML here
+  callback?.();
+}
 
-    if (href === currentFile) {
-      link.classList.add('active');
-      const dropdown = link.closest('.dropdownList');
-      const parentLink = dropdown?.closest('.navLi')?.querySelector('.navLink');
-      parentLink?.classList.add('active');
-    } else {
-      link.classList.remove('active');
+// Highlight current page in navbar
+function highlightActiveLink() {
+  const current = (window.location.pathname.split("/").pop() || "index.html").split("?")[0];
+  document.querySelectorAll(".navLink").forEach(link => {
+    const href = link.getAttribute("href")?.split("?")[0];
+    if (!href || href === "#") return;
+    if (href === current) {
+      link.classList.add("active");
+      link.closest(".dropdownList")?.closest(".navLi")?.querySelector(".navLink")?.classList.add("active");
     }
   });
 }
 
-// DOM Ready
-document.addEventListener('DOMContentLoaded', () => {
-  if (typeof loadContent === 'function') {
-    loadContent(() => highlightActiveLink());
-  } else {
-    highlightActiveLink();
-  }
-});
+// Sticky Header on Scroll
+function initHeaderBehavior() {
+  const header = document.getElementById("main-header");
+  const belowContent = document.getElementById("headBelowContent");
+
+  const handleScroll = () => {
+    const scrollTop = window.pageYOffset;
+    const stickyStart = header.offsetTop + header.offsetHeight + 5;
+    const resetPoint = belowContent.offsetTop + belowContent.offsetHeight + 4;
+
+    if (scrollTop > stickyStart) {
+      header.classList.add("sticky-header", "visible");
+      header.classList.remove("headerAnimate");
+    } else if (scrollTop < resetPoint) {
+      header.classList.remove("sticky-header", "visible");
+      header.classList.add("headerAnimate");
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  window.addEventListener("load", handleScroll);
+}
+
+// Mobile Nav Toggle and Submenu
+function initMobileNavToggle() {
+  const toggleBtn = document.querySelector(".navToggle");
+  const navMenu = document.querySelector(".navMenu");
+  const closeBtn = document.querySelector(".btn-nav-close");
+
+  toggleBtn?.addEventListener("click", () => navMenu.classList.toggle("active"));
+  closeBtn?.addEventListener("click", () => navMenu.classList.remove("active"));
+
+  document.querySelectorAll(".toggleSub").forEach(toggle => {
+    toggle.addEventListener("click", e => {
+      e.preventDefault();
+      const submenu = toggle.closest(".navLi").querySelector(".dropdownList");
+
+      // Close all others
+      document.querySelectorAll(".dropdownList.open").forEach(menu => {
+        if (menu !== submenu) menu.classList.remove("open");
+      });
+
+      submenu?.classList.toggle("open");
+    });
+  });
+}
+

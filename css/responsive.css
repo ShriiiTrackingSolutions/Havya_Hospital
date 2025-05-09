@@ -55,11 +55,14 @@
   gap: 4px;
 }
 
-.aboutAndStatistics{
+.aboutAndStatistics,.WelcomeToHavya{
   background: url('../image/statisticBackMob.webp') center/cover no-repeat;
 }
 
 .aboutAndStatistics .container>.row{
+  flex-direction: column-reverse;
+}
+.whyChoosUs .container>.row{
   flex-direction: column-reverse;
 }
 
@@ -127,7 +130,7 @@
     width: 296.5px;
     max-width: 296.5px;
   }
-  .havyaGallery{
+  .extraPadding{
     padding-bottom: 173px;
   }
   .footer.homePage0{
@@ -175,7 +178,7 @@ row-gap: 24px;
 .contact-message li a{
   justify-content: center;
 }
-.havyaGallery{
+.extraPadding{
   padding-bottom: 50px;
 }
 .footer.homePage0{
