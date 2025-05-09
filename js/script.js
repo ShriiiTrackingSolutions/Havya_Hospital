@@ -10,7 +10,7 @@ document.getElementById("header").innerHTML = `
   <nav class="mynavbar bg-light">
               <div class="container-fluid header">
                 <a class="brandLogo" href="index.html">
-                  <img src="image/RudvedaLogo.webp" alt="Rudveda Logo">
+                  <img src="image/Havya_Logo.webp" alt="Havya Logo">
                 </a>
                 <button class="navToggle">
                   <i class="fa fa-bars" aria-hidden="true"></i>
@@ -29,7 +29,7 @@ document.getElementById("header").innerHTML = `
                       </span>
                     </a>
                     <ul class="dropdownList">
-                      <li class="navLi"><a href="#" class="navLink">Rudveda Profile</a></li>
+                      <li class="navLi"><a href="#" class="navLink">Havya Profile</a></li>
                       <li class="navLi"><a href="#" class="navLink">link 2</a></li>
                       <li class="navLi"><a href="#" class="navLink">link 3</a></li>
                     </ul>
@@ -69,7 +69,7 @@ document.getElementById("footer").innerHTML = `
             <!-- Company Info -->
             <div class="col-lg-auto col-sm-6 mb-4 mb-md-0">
               <a class="footer-brand" href="index.html">
-                <img loading="lazy" src="image/RudvedaLogoWhite.webp" alt="Rudveda">
+                <img loading="lazy" src="image/Havya_Logo.webp" alt="Havya Logo">
               </a>
               <ul class="contact-info">
                 <li>
@@ -89,8 +89,8 @@ Vadodara,391410
                     <i class="fa-solid fa-phone"></i>+91 6354 710 794</a>
                 </li>
                 <li>
-                  <a class="emailAnchor" href="mailto:rudveda">
-                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>rudveda</a>
+                  <a class="emailAnchor" href="mailto:Havya@hospital.com">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>Havya@hospital.com</a>
                 </li>
               </ul>
               <div class="social-icons mt-3">
@@ -198,7 +198,7 @@ Vadodara,391410
           <div class="row ">
             <div class="col-12">
               <div class="inner">
-                <div class="copyright text-center"> <span class="year"></span>  All Rights Reserved by Rudveda | Developed by <a href="https://shriiitrackingsolution.in/" target="_blank">
+                <div class="copyright text-center"> <span class="year"></span>  All Rights Reserved by Havya | Developed by <a href="https://shriiitrackingsolution.in/" target="_blank">
                     <b>Shriii&nbsp;Tracking&nbsp;Solution</b>
                   </a>
                 </div>
