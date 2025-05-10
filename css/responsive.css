@@ -62,12 +62,15 @@
 .aboutAndStatistics .container>.row{
   flex-direction: column-reverse;
 }
-.whyChoosUs .container>.row{
+.whyChoosUs .container>.row,.treatmentBanner .container>.row{
   flex-direction: column-reverse;
+}
+.treatmentBanner{
+    background: url('../image/statisticBackMob.webp') center / cover no-repeat;
 }
 .contactForm .container>.row{
   row-gap: 24px;
-   flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 
 }

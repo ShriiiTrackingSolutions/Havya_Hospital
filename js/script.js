@@ -73,18 +73,23 @@ function loadHeaderFooter(callback) {
                     </a>
                     <ul class="dropdownList">
                       <li class="navLi"><a href="havyaProfile.html" class="navLink">About Havya</a></li>
-                      <li class="navLi"><a href="#" class="navLink">Meet Our Doctors</a></li>
+                      <li class="navLi"><a href="#" class="navLink">Link 2</a></li>
                       <li class="navLi"><a href="#" class="navLink">link 3</a></li>
                     </ul>
                   </li>
                   <li class="navLi">
-                    <a href="#" class="navLink">Services 
-                      <span class="toggleSub"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 10l6 6l6-6z"/></svg></span>
+                    <a href="#" class="navLink">Treatments 
+                      <span class="toggleSub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 10l6 6l6-6z"/></svg>
+                      </span>
                     </a>
                     <ul class="dropdownList">
-                      <li class="navLi"><a href="#" class="navLink">link 1</a></li>
-                      <li class="navLi"><a href="#" class="navLink">link 2</a></li>
-                      <li class="navLi"><a href="#" class="navLink">link 3</a></li>
+                      <li class="navLi"><a href="infertility.html" class="navLink">Infertility</a></li>
+                      <li class="navLi"><a href="familyPlanning.html" class="navLink">Family Planning</a></li>
+                      <li class="navLi"><a href="gynecology.html" class="navLink">Gynecology</a></li>
+                      <li class="navLi"><a href="maternity.html" class="navLink">Maternity</a></li>
+                      <li class="navLi"><a href="cosmeticGynecology.html" class="navLink">Cosmetic Gynecology</a></li>
+                      <li class="navLi"><a href="laparoscopy.html" class="navLink">Laparoscopy</a></li>
                     </ul>
                   </li>
                  
