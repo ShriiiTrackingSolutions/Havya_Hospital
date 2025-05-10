@@ -73,7 +73,7 @@ function loadHeaderFooter(callback) {
                     </a>
                     <ul class="dropdownList">
                       <li class="navLi"><a href="havyaProfile.html" class="navLink">About Havya</a></li>
-                      <li class="navLi"><a href="meetOurDoctors.html" class="navLink">Meet Our Doctors</a></li>
+                      <li class="navLi"><a href="#" class="navLink">Meet Our Doctors</a></li>
                       <li class="navLi"><a href="#" class="navLink">link 3</a></li>
                     </ul>
                   </li>
@@ -89,7 +89,7 @@ function loadHeaderFooter(callback) {
                   </li>
                  
                   <li class="navLi"><a href="#" class="navLink">Patient Testimonials</a></li>
-                  <li class="navLi"><a href="#" class="navLink">Contact</a></li>
+                  <li class="navLi"><a href="contactUs.html" class="navLink">Contact</a></li>
                 </ul>
     
               </div>
