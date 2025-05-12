@@ -93,7 +93,7 @@ function loadHeaderFooter(callback) {
                     </ul>
                   </li>
                  
-                  <li class="navLi"><a href="#" class="navLink">Patient Testimonials</a></li>
+                  <li class="navLi"><a href="testimonials.html" class="navLink">Patient Testimonials</a></li>
                   <li class="navLi"><a href="contactUs.html" class="navLink">Contact</a></li>
                 </ul>
     

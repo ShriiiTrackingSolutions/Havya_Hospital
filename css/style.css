@@ -1045,4 +1045,28 @@ hr {
     margin: 1rem auto;
     border-top: 1.4px solid;
 }
+
 /* Common Causes section end */
+
+
+.PatientTestimonials .treatImgWrap {
+    background: url(../image/circleRingBack.webp) right bottom no-repeat;
+    background-size: cover;
+}
+.mainTestiRow {
+  row-gap: 24px;
+
+}
+
+.reviewvText{
+  font-size: 28px;
+  color: var(--primary-color);
+}
+
+.patientName{
+  color: var(--secondary-color);
+  font-size: 24px;
+}
+.ratings{
+  color: var(--primary-color);
+}

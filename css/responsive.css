@@ -73,6 +73,14 @@
   flex-direction: column-reverse;
 }
 
+.reviewvText{
+  font-size: 22px;
+}
+
+.patientName{
+  font-size: 18px;
+}
+
 }
 @media (max-width: 767.98px) {
   .footer,
@@ -147,6 +155,10 @@
   .callCards{
     justify-content: start;
   }
+
+  .row_reverse{
+    flex-direction: column-reverse;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -198,6 +210,14 @@ row-gap: 24px;
 }
 .footer.homePage0{
   padding-top: 0px;
+}
+
+.reviewvText{
+  font-size: 18px;
+}
+
+.patientName{
+  font-size: 14px;
 }
 
 }
