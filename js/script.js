@@ -1,26 +1,4 @@
 
-// WhatsApp URL Adjuster (Responsive)
-(function () {
-  const whatsappLinks = [
-    "https://web.whatsapp.com/send?phone=916354710794",
-    "https://api.whatsapp.com/send?phone=916354710794"
-  ];
-
-  function updateWhatsAppLink() {
-    const isMobile = window.innerWidth <= 767.98;
-    document.querySelectorAll(".set-url-target").forEach(el =>
-      el.setAttribute("href", whatsappLinks[isMobile ? 1 : 0])
-    );
-  }
-
-  let resizeTimer;
-  window.addEventListener("resize", () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(updateWhatsAppLink, 200);
-  });
-
-  updateWhatsAppLink(); // Call on load
-})();
 
 // DOM Ready
 document.addEventListener("DOMContentLoaded", () => {
@@ -40,8 +18,8 @@ function loadHeaderFooter(callback) {
             
 <div class="row">
   <div class="col-auto topheadLinks">
-    <a target="_blank" href="tel:+916354710794"><i class="fa-solid fa-phone" aria-hidden="true"></i> +91 63547 10794</a>
-    <a target="_blank" href="https://maps.app.goo.gl/EMtQmUV8unVQYXWE8"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Vadodara</a>
+    <a target="_blank" href="tel:+916351836898"><i class="fa-solid fa-phone" aria-hidden="true"></i> +91 63518 36898</a>
+    <a target="_blank" href="https://maps.app.goo.gl/qsc8AGfzZZnhsZ1H6"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Vadodara</a>
   </div>
   <div class="col-auto topheadSocial">
     <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -84,16 +62,17 @@ function loadHeaderFooter(callback) {
                       </span>
                     </a>
                     <ul class="dropdownList">
-                      <li class="navLi"><a href="infertility.html" class="navLink">Infertility</a></li>
-                      <li class="navLi"><a href="familyPlanning.html" class="navLink">Family Planning</a></li>
-                      <li class="navLi"><a href="gynecology.html" class="navLink">Gynecology</a></li>
                       <li class="navLi"><a href="maternity.html" class="navLink">Maternity</a></li>
-                      <li class="navLi"><a href="cosmeticGynecology.html" class="navLink">Cosmetic Gynecology</a></li>
+                      <li class="navLi"><a href="gynecology.html" class="navLink">Gynecology</a></li>
+                      <li class="navLi"><a href="familyPlanning.html" class="navLink">Family Planning</a></li>
                       <li class="navLi"><a href="laparoscopy.html" class="navLink">Laparoscopy</a></li>
+                      <li class="navLi"><a href="infertility.html" class="navLink">Infertility</a></li>
+                      <li class="navLi"><a href="sonography.html" class="navLink">Sonography</a></li>
                     </ul>
                   </li>
                  
                   <li class="navLi"><a href="testimonials.html" class="navLink">Patient Testimonials</a></li>
+                  <li class="navLi"><a href="gallery.html" class="navLink">Gallery</a></li>
                   <li class="navLi"><a href="contactUs.html" class="navLink">Contact</a></li>
                 </ul>
     
@@ -112,29 +91,29 @@ function loadHeaderFooter(callback) {
               </a>
               <ul class="contact-info">
                 <li>
-                  <a class="locationLink footerLinks" target="_blank" href="https://maps.app.goo.gl/EMtQmUV8unVQYXWE8">
+                  <a class="locationLink footerLinks" target="_blank" href="https://maps.app.goo.gl/qsc8AGfzZZnhsZ1H6">
                     <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
                     <A1-TF-25>
                       <pre class="mb-0">
-TF-A1-22, Akshar Pavilion Mall, 
-Near Priya Cinema,Vasna Bhyali
-Main Road, Vadodara,391410</pre>
+2nd floor, Broadway Signature,
+Sevasi - Canal Rd, Sevasi,
+Vadodara, Gujarat 391101</pre>
                   </a>
                 </li>
                 <li>
-                  <a href="tel:+916354710794" class="footerLinks">
-                    <i class="fa-solid fa-phone"></i>+91 63547 10794</a>
+                  <a href="tel:+916351836898" class="footerLinks">
+                    <i class="fa-solid fa-phone"></i>+91 63518 36898</a>
                 </li>
                 <li>
-                  <a class="emailAnchor footerLinks" href="mailto:havya@hgsaj.com">
-                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>havya@hgsaj.com</a>
+                  <a class="emailAnchor footerLinks" href="mailto:havyawomenhospital@gmail.com">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>havyawomenhospital@gmail.com</a>
                 </li>
               </ul>
               <div class="social-icons mt-3">
                 <a target="_blank" class="facebook" href="https://www.linkedin.com/">
                   <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
                 </a>
-                <a class="whatsapp set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=916354710794">
+                <a class="whatsapp set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=916351836898">
                   <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
                 </a>
               </div>
@@ -306,4 +285,28 @@ function initMobileNavToggle() {
     });
   });
 }
+
+
+// WhatsApp URL Adjuster (Responsive)
+(function () {
+  const whatsappLinks = [
+    "https://web.whatsapp.com/send?phone=916351836898",
+    "https://api.whatsapp.com/send?phone=916351836898"
+  ];
+
+  function updateWhatsAppLink() {
+    const isMobile = window.innerWidth <= 767.98;
+    document.querySelectorAll(".set-url-target").forEach(el =>
+      el.setAttribute("href", whatsappLinks[isMobile ? 1 : 0])
+    );
+  }
+
+  let resizeTimer;
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(updateWhatsAppLink, 200);
+  });
+
+  updateWhatsAppLink(); // Call on load
+})();
 

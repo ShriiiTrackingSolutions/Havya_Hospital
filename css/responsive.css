@@ -128,10 +128,7 @@
   .footer .locationLink {
     max-width: 304px;
   }
-  .footer ul:not(.footer .exploreLinks1 ul) {
-    max-width: 304px;
-    margin: auto;
-  }
+ 
   .footer .exploreLinks1 ul {
     max-width: 352px;
     margin: auto;
@@ -142,8 +139,8 @@
     margin: auto;
   }
   .footer ul.contact-info{
-    width: 296.5px;
-    max-width: 296.5px;
+    width: 318.5px;
+    max-width: 318.5px;
   }
   .extraPadding{
     padding-bottom: 173px;
