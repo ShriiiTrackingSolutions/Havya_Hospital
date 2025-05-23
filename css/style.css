@@ -182,7 +182,6 @@ img {
 .navLink {
   text-decoration: none;
   color: var(--primary-color);
-  font-size: 18px;
   font-weight: bold;
   padding: 26px 8px;
   display: block;
@@ -1084,3 +1083,50 @@ hr {
 .ratings{
   color: var(--primary-color);
 }
+
+
+
+/* gallery categories  */
+
+.grid-item {
+   aspect-ratio: 24/16;
+   object-fit: cover;
+   margin-bottom: 24px;
+  }
+
+  .grid-sizer,.grid-item{
+    width: calc(33.333333% - 24px);                                                                              ;
+  }
+
+.gutter-sizer { 
+  width: 24px;
+}
+
+.grid-item--height2 {
+  aspect-ratio: 12/18;
+  object-fit: cover;
+}
+
+
+/* meet Our Team Section start */
+.meetOurTeam{
+  background-color: var(--lightBg);
+}
+.imgHover{
+  border-radius: 24px;
+  overflow: hidden;
+}
+.imgHover img{
+  transition: transform 0.6s ease-in-out;
+}
+.doctorProfileCard{
+  background-color: #ffffff;
+  padding: 12px;
+  border-radius: 28px;
+}
+
+.doctorProfileCard:hover .imgHover img {
+  transform: scale(1.08);
+}
+
+/* meet Our Team Section end */

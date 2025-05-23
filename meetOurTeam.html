@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery | Havya Women Hospital</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="image/Havya_Logo.webp" />
+    <title>Meet Our Team | Havya Women Hospital</title>
     <!-- Meta Robots (SEO Indexing): -->
 <meta name="robots" content="index, follow">
 <meta name="description" content="Havya Women Hospital is a women and child-focused healthcare center offering expert services in infertility treatment, gynecology, maternity, laparoscopic surgery, and more – all under one compassionate roof.">
@@ -17,9 +19,6 @@
 <meta property="og:url" content="https://yourdomain.com/">
 <meta property="og:type" content="website">
 
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="image/Havya_Logo.webp" />
  
     <link fetchpriority="high" rel="preload" href="image/Havya_Logo.webp" as="image" type="image/webp" />
 
@@ -31,7 +30,6 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="css/spotlight.css">
     <link rel="preconnect" href="https://kit.fontawesome.com" />
     <link rel="dns-prefetch" href="https://kit.fontawesome.com" />
     <script src="https://kit.fontawesome.com/52ca9e0df4.js" crossorigin="anonymous"></script>
@@ -47,35 +45,31 @@
       </div>
       </div>
     </header>
-
-   
     <!-- header start -->
 
-<!-- Gallery Categories Section start -->
- <section  id="headBelowContent" class="galleryCategories defaultPadding extraPadding">
-   <div class="container">
-     <div class="grid MansonryGallery">
-       <div class="gutter-sizer"></div>
-       <div class="grid-sizer"></div>
-       <div class="grid-item">
-         <a class="spotlight" href="https://images.pexels.com/photos/31800279/pexels-photo-31800279/free-photo-of-charming-lisbon-street-with-historic-tram.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-           <img src="https://images.pexels.com/photos/31800279/pexels-photo-31800279/free-photo-of-charming-lisbon-street-with-historic-tram.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Engagement pic" />
-         </a>
-       </div>
-       <div class="grid-item grid-item--height2">
-         <a class="spotlight" href="https://images.pexels.com/photos/22882069/pexels-photo-22882069/free-photo-of-woman-in-a-pink-dress-standing-on-a-boat-holding-a-bunch-of-pink-tulips.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-           <img src="https://images.pexels.com/photos/22882069/pexels-photo-22882069/free-photo-of-woman-in-a-pink-dress-standing-on-a-boat-holding-a-bunch-of-pink-tulips.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Engagement pic" />
-         </a>
-       </div>
-       <div class="grid-item">
-         <a class="spotlight" href="https://images.pexels.com/photos/32132397/pexels-photo-32132397/free-photo-of-stunning-himalayan-mountains-with-prayer-flags-in-nepal.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-           <img src="https://images.pexels.com/photos/32132397/pexels-photo-32132397/free-photo-of-stunning-himalayan-mountains-with-prayer-flags-in-nepal.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Engagement pic" />
-         </a>
-       </div>
-     </div>
-   </div>
- </section>
-<!-- Gallery Categories Section end -->
+<!-- meet Our Team Section start -->
+    <section id="headBelowContent" class="meetOurTeam defaultPadding extraPadding">
+      <div class="container">
+         <h2 class="secH text-center">Meet Our Team</h2>
+         <div class="row">
+          <div class="col-lg-4 col-sm-6">
+            <div class="doctorProfileCard">
+              <div class="imgHover">
+                <img src="image/DoctorProfile1.webp" alt="">
+              </div>
+              <div class="doctorInfo">
+                <h3 class="fourthH">🩺 Dr. Meera Kulkarni</h3>
+                 <span class="position&Degree">Obstetrician & Gynecologist, MS (OBG)</span>
+                 <p>Bringing over 15 years of expertise in high-risk pregnancies, menstrual disorders, and adolescent gynecology with a compassionate, personalized care approach.</p>
+              </div>
+            </div>
+          </div>
+         </div>
+      </div>
+    </section>
+<!-- meet Our Team Section end -->
+
+
 
 <!-- call to action section start -->
 <section class="callToAction ">
@@ -153,69 +147,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="js/spotlight.bundle.js"></script>
 
-     <script>
-      Spotlight.show(myGallery, {
-        // "fade", "slide", "scale", and "rotate"
-        animation: "slide",
-        /* shows/hides controls
-    "theme",
-    "fullscreen",
-    "autofit",
-    "zoom-in",
-    "zoom-out",
-    "page",
-    "title",
-    "description",
-    "player"
-  */
-        control: [
-          "autofit",
-          "zoom",
-          "player",
-          "fullscreen",
-          "zoom-in",
-          "zoom-out",
-        ],
-        // auto hides the controls
-        autohide: true,
-        // shows fullscreen toggle button
-        fullscreen: true,
-        // shows zoom buttons
-        zoom: true,
-        // shows zoomIn button
-        zoomin: true,
-        // shows zoomOut button
-        zoomout: true,
-        // shows reset button
-        reset: true,
-        // shows autoplay button
-        player: true,
-        // infinite mode
-        infinite: true,
-        // "white" or "dark"
-        theme: "dark",
-        // shows pages
-        page: true,
-        // shows image preloader
-        preloader: true,
-        // enables image prefetching
-        prefetch: true,
-      });
-    </script>
 
-     <script>
-      $('.grid').masonry({
-       // set itemSelector so .grid-sizer is not used in layout
-       itemSelector: '.grid-item',
-       // use element for option
-       columnWidth: '.grid-sizer',
-       gutter: '.gutter-sizer',
-       percentPosition: true,
-      })    
-    </script>
+
 
     <script defer src="js/script.js"></script>
   </body>
