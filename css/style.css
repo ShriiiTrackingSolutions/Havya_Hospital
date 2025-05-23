@@ -1086,7 +1086,7 @@ hr {
 
 
 
-/* gallery categories  */
+/* gallery categories start */
 
 .grid-item {
    aspect-ratio: 24/16;
@@ -1106,23 +1106,47 @@ hr {
   aspect-ratio: 12/18;
   object-fit: cover;
 }
+.galleryCategories{
+  background: url('../image/BigBack.webp') center / cover no-repeat;
+}
+
+/* gallery categories end */
 
 
 /* meet Our Team Section start */
 .meetOurTeam{
   background-color: var(--lightBg);
 }
+.meetOurTeam .container>.row{
+  row-gap: 24px;
+}
 .imgHover{
   border-radius: 24px;
   overflow: hidden;
+  margin-bottom: 8px;
 }
 .imgHover img{
   transition: transform 0.6s ease-in-out;
+}
+.positionAndDegree{
+  display: inline-block;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin: 0px 0 8px;
+}
+.doctorProfileCard .fourthH{
+  color: var(--secondary-color);
+}
+.doctorProfileCard p{
+  color: var(--Grey);
+  margin-bottom: 0;
 }
 .doctorProfileCard{
   background-color: #ffffff;
   padding: 12px;
   border-radius: 28px;
+  text-align: center;
+  height: 100%;
 }
 
 .doctorProfileCard:hover .imgHover img {
