@@ -50,12 +50,12 @@ function loadHeaderFooter(callback) {
                       </span>
                     </a>
                     <ul class="dropdownList">
-                      <li class="navLi"><a href="havyaProfile.html" class="navLink">About Havya</a></li>
-                      <li class="navLi"><a href="meetOurTeam.html" class="navLink">Meet Our Team</a></li>
+                      <li class="navLi"><a href="havyaProfile.html" class="navLink">About Us</a></li>
+                      <li class="navLi"><a href="meetOurDoctors.html" class="navLink">Meet Our Doctors</a></li>
                     </ul>
                   </li>
                   <li class="navLi">
-                    <a href="#" class="navLink">Treatments 
+                    <a href="#" class="navLink">Our Treatments 
                       <span class="toggleSub">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 10l6 6l6-6z"/></svg>
                       </span>
@@ -84,10 +84,57 @@ function loadHeaderFooter(callback) {
         <div class="footWrap defaultPadding">
           <div class="row">
             <!-- Company Info -->
-            <div class="col-lg-auto col-sm-6 mb-4 mb-md-0">
+            <div class="col-lg-auto col-sm-6 mb-4 mb-md-0 FooterAbout">
               <a class="footer-brand" href="index.html">
                 <img loading="lazy" src="image/Havya_Logo.webp" alt="KADS">
               </a>
+              <p>
+                Havya Women Hospital offers compassionate, expert care in gynecology, maternity, and fertility, ensuring personalized women’s healthcare in a supportive, modern, and centrally located facility.
+              </p>
+             
+            </div>
+            <div class="col-sm-6 col-lg-auto mb-4 mb-md-0 exploreLinks">
+              <h5 class="fourthH">Quick Links</h5>
+              <ul>
+                <li>
+                  <a class="footerLinks" href="index.html">
+                    <i class="fa-solid fa-circle-chevron-right"></i>Home </a>
+                </li>
+                <li>
+                  <a class="footerLinks" href="havyaProfile.html">
+                    <i class="fa-solid fa-circle-chevron-right"></i>About Us</a>
+                </li>
+                <li>
+                  <a class="footerLinks" href="meetOurDoctors.html">
+                    <i class="fa-solid fa-circle-chevron-right"></i>Meet Our Doctors </a>
+                </li>
+                <li>
+                  <a class="footerLinks" href="testimonials.html">
+                    <i class="fa-solid fa-circle-chevron-right"></i>Patient Testimonials</a>
+                </li>
+                <li>
+                  <a class="footerLinks" href="gallery.html">
+                    <i class="fa-solid fa-circle-chevron-right"></i>Gallery</a>
+                </li>
+                <li>
+                  <a class="footerLinks" href="contactUs.html">
+                    <i class="fa-solid fa-circle-chevron-right"></i>Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-lg-auto mb-4 mb-md-0 exploreLinks1">
+              <h5 class="fourthH ">Our Treatments</h5>
+              <ul>   
+                 <li><a href="maternity.html" class="footerLinks"><i class="fa-solid fa-circle-chevron-right"></i> Maternity</a></li>
+                 <li><a href="sonography.html" class="footerLinks"><i class="fa-solid fa-circle-chevron-right"></i> Sonography</a></li>
+                 <li><a href="infertility.html" class="footerLinks"><i class="fa-solid fa-circle-chevron-right"></i> Infertility</a></li>
+                 <li><a href="gynecology.html" class="footerLinks"><i class="fa-solid fa-circle-chevron-right"></i> Gynecology</a></li>
+                 <li><a href="familyPlanning.html" class="footerLinks"><i class="fa-solid fa-circle-chevron-right"></i> Family Planning</a></li>
+                 <li><a href="laparoscopy.html" class="footerLinks"><i class="fa-solid fa-circle-chevron-right"></i> Laparoscopy</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-auto mb-4 mb-md-0">
+              <h5 class="fourthH ">Contact Us</h5>
               <ul class="contact-info">
                 <li>
                   <a class="locationLink footerLinks" target="_blank" href="https://maps.app.goo.gl/qsc8AGfzZZnhsZ1H6">
@@ -117,91 +164,6 @@ Vadodara, Gujarat 391101</pre>
                 </a>
               </div>
             </div>
-            <div class="col-sm-6 col-lg-auto mb-4 mb-md-0 exploreLinks">
-              <h5 class="fourthH centerStyle">Quick Links</h5>
-              <ul>
-                <li>
-                  <a class="footerLinks" href="index.html">
-                    <i class="fa-solid fa-circle-chevron-right"></i>Home </a>
-                </li>
-                <li>
-                  <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>About</a>
-                </li>
-                <li>
-                  <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>Service </a>
-                </li>
-                <li>
-                  <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>Testimonials </a>
-                </li>
-                <li>
-                  <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>Contact </a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-sm-6 col-lg-auto mb-4 mb-md-0 exploreLinks1">
-              <h5 class="fourthH centerStyle">Explore More</h5>
-              <ul>
-                <li>
-                  <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>Link 1 will be here</a>
-                </li>
-                <li>
-                  <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>Link 2 will be here</a>
-                </li>
-                <li>
-                  <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>Link 3 will be here</a>
-                </li>
-                <li>
-                  <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>Link 4 will be here</a>
-                </li>
-                <li>
-                  <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>Link 5 will be here</a>
-                </li>
-                <li>
-                  <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>Link 6 will be here</a>
-                </li>
-                
-              </ul>
-            </div>
-            <div class="col-sm-6 col-lg-auto mb-4 mb-md-0 exploreLinks1">
-              <h5 class="fourthH centerStyle">Explore More</h5>
-              <ul>
-                <li>
-                  <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>Link 1 will be here</a>
-                </li>
-                <li>
-                  <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>Link 2 will be here</a>
-                </li>
-                <li>
-                  <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>Link 3 will be here</a>
-                </li>
-                <li>
-                  <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>Link 4 will be here</a>
-                </li>
-                <li>
-                  <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>Link 5 will be here</a>
-                </li>
-                <li>
-                  <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>Link 6 will be here</a>
-                </li>
-                
-              </ul>
-            </div>
           
             <!-- Contact Info -->
           </div>
@@ -213,7 +175,7 @@ Vadodara, Gujarat 391101</pre>
           <div class="row ">
             <div class="col-12">
               <div class="inner">
-                <div class="copyright text-center"> <span class="year"></span>  All Rights Reserved by Havya | Developed by <a href="https://shriiitrackingsolution.in/" target="_blank">
+                <div class="copyright text-center"> <span class="year"></span>  All Rights Reserved by Havya Women Hospital | Developed by <a href="https://shriiitrackingsolution.in/" target="_blank">
                     <b>Shriii&nbsp;Tracking&nbsp;Solution</b>
                   </a>
                 </div>
@@ -286,26 +248,26 @@ function initMobileNavToggle() {
 }
 
 
-// WhatsApp URL Adjuster (Responsive)
+// WhatsApp URL Adjuster (Device-based Detection)
 (function () {
-  const whatsappLinks = [
-    "https://web.whatsapp.com/send?phone=916351836898",
-    "https://api.whatsapp.com/send?phone=916351836898"
-  ];
+  const mobileLink = "https://api.whatsapp.com/send?phone=916351836898";
+  const desktopLink = "https://web.whatsapp.com/send?phone=916351836898";
 
-  function updateWhatsAppLink() {
-    const isMobile = window.innerWidth <= 767.98;
-    document.querySelectorAll(".set-url-target").forEach(el =>
-      el.setAttribute("href", whatsappLinks[isMobile ? 1 : 0])
-    );
+  function isMobileDevice() {
+    return /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
   }
 
-  let resizeTimer;
-  window.addEventListener("resize", () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(updateWhatsAppLink, 200);
-  });
+  function updateWhatsAppLink() {
+    const isMobile = isMobileDevice();
+    const targetLink = isMobile ? mobileLink : desktopLink;
 
-  updateWhatsAppLink(); // Call on load
+    document.querySelectorAll(".set-url-target").forEach(el => {
+      el.setAttribute("href", targetLink);
+    });
+  }
+
+  window.addEventListener("resize", updateWhatsAppLink);
+  window.addEventListener("load", updateWhatsAppLink);
 })();
+
 
