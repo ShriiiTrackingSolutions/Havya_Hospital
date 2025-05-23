@@ -62,11 +62,11 @@ function loadHeaderFooter(callback) {
                     </a>
                     <ul class="dropdownList">
                       <li class="navLi"><a href="maternity.html" class="navLink">Maternity</a></li>
+                      <li class="navLi"><a href="sonography.html" class="navLink">Sonography</a></li>
+                      <li class="navLi"><a href="infertility.html" class="navLink">Infertility</a></li>
                       <li class="navLi"><a href="gynecology.html" class="navLink">Gynecology</a></li>
                       <li class="navLi"><a href="familyPlanning.html" class="navLink">Family Planning</a></li>
                       <li class="navLi"><a href="laparoscopy.html" class="navLink">Laparoscopy</a></li>
-                      <li class="navLi"><a href="infertility.html" class="navLink">Infertility</a></li>
-                      <li class="navLi"><a href="sonography.html" class="navLink">Sonography</a></li>
                     </ul>
                   </li>
                  
