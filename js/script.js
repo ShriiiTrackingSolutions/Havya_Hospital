@@ -86,7 +86,7 @@ function loadHeaderFooter(callback) {
             <!-- Company Info -->
             <div class="col-lg-auto col-sm-6 mb-4 mb-md-0 FooterAbout">
               <a class="footer-brand" href="index.html">
-                <img loading="lazy" src="image/Havya_Logo.webp" alt="KADS">
+                <img loading="lazy" src="image/Havya_Logo.webp" alt="Havya Logo">
               </a>
               <p>
                 Havya Women Hospital offers compassionate, expert care in gynecology, maternity, and fertility, ensuring personalized women’s healthcare in a supportive, modern, and centrally located facility.
