@@ -22,9 +22,8 @@ function loadHeaderFooter(callback) {
     <a target="_blank" href="https://maps.app.goo.gl/qsc8AGfzZZnhsZ1H6"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Vadodara</a>
   </div>
   <div class="col-auto topheadSocial">
-    <a href=""><i class="fa-brands fa-facebook"></i></a>
-    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/people/Havya-womens-hospital/61574666012974/"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://www.instagram.com/havyawomenshospital/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D#"><i class="fa-brands fa-square-instagram"></i></a>
   </div>
 </div>
             </div>
@@ -151,13 +150,16 @@ Vadodara, Gujarat 391101</pre>
                     <i class="fa-solid fa-phone"></i>+91 63518 36898</a>
                 </li>
                 <li>
-                  <a class="emailAnchor footerLinks" href="mailto:havyawomenhospital@gmail.com">
-                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>havyawomenhospital@gmail.com</a>
+                  <a class="emailAnchor footerLinks" href="mailto:havyawomenshospital@gmail.com">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>havyawomenshospital@gmail.com</a>
                 </li>
               </ul>
               <div class="social-icons mt-3">
-                <a target="_blank" class="facebook" href="https://www.linkedin.com/">
-                  <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                <a target="_blank" class="facebook" href="https://www.facebook.com/people/Havya-womens-hospital/61574666012974/">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a target="_blank" class="instagram" href="https://www.instagram.com/havyawomenshospital/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D#">
+                  <i class="fa-brands fa-instagram"></i>
                 </a>
                 <a class="whatsapp set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=916351836898">
                   <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
