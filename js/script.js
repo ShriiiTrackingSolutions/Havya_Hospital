@@ -150,6 +150,10 @@ Vadodara, Gujarat 391101</pre>
                     <i class="fa-solid fa-phone"></i>+91 63518 36898</a>
                 </li>
                 <li>
+                  <a href="tel:+912653176295" class="footerLinks">
+                    <i class="fa-solid fa-phone"></i>+91 265 317 6295</a>
+                </li>
+                <li>
                   <a class="emailAnchor footerLinks" href="mailto:havyawomenshospital@gmail.com">
                     <i class="fa-solid fa-envelope" aria-hidden="true"></i>havyawomenshospital@gmail.com</a>
                 </li>
