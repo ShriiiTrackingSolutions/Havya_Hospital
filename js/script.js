@@ -12,73 +12,132 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Load Header and Footer
 function loadHeaderFooter(callback) {
-  document.getElementById("header").innerHTML = ` <div class="miniHeader d-none d-sm-block">
+  document.getElementById("header").innerHTML = ` <div class="miniHeader d-none d-lg-block">
             <div class="container">
-
-            
-<div class="row">
-  <div class="col-auto topheadLinks">
-    <a target="_blank" href="tel:+916351836898"><i class="fa-solid fa-phone" aria-hidden="true"></i> +91 63518 36898</a>
-    <a target="_blank" href="https://maps.app.goo.gl/qsc8AGfzZZnhsZ1H6"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Vadodara</a>
-  </div>
-  <div class="col-auto topheadSocial">
-    <a href="https://www.facebook.com/people/Havya-womens-hospital/61574666012974/"><i class="fa-brands fa-facebook"></i></a>
-    <a href="https://www.instagram.com/havyawomenshospital/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D#"><i class="fa-brands fa-square-instagram"></i></a>
-  </div>
-</div>
+              <div class="row">
+                <div class="col-auto topheadSocial">
+                  <a class="brandLogo d-none d-lg-inline-block" href="index.html">
+                    <img src="image/Havya_Logo.webp" alt="Havya Women's Hospital Logo">
+                  </a>
+                </div>
+                <div class="col-auto topheadContacts">
+                  <div class="cantactCardTop">
+                    <div class="iconBox">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" fill-opacity="0" d="M12 11l-8 -5h16l-8 5Z"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.15s" values="0;0.3"/></path><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"><path stroke-dasharray="64" stroke-dashoffset="64" d="M4 5h16c0.55 0 1 0.45 1 1v12c0 0.55 -0.45 1 -1 1h-16c-0.55 0 -1 -0.45 -1 -1v-12c0 -0.55 0.45 -1 1 -1Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0"/></path><path stroke-dasharray="24" stroke-dashoffset="24" d="M3 6.5l9 5.5l9 -5.5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="24;0"/></path></g></svg>
+                    </div>
+                    <div class="infoBox ">
+                      <h3 class="fifthH">Email</h3>
+                      <p>havyawomenshospital@gmail.com</p>
+                    </div>
+                    <a href="mailto:havyawomenshospital@gmail.com" class="absAnchor"></a>
+                  </div>
+                  <div class="cantactCardTop">
+                    <div class="iconBox">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"><path stroke-dasharray="64" stroke-dashoffset="64" d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0"/><animateTransform id="lineMdPhoneCallLoop0" fill="freeze" attributeName="transform" begin="0.6s;lineMdPhoneCallLoop0.begin+2.7s" dur="0.5s" type="rotate" values="0 12 12;15 12 12;0 12 12;-12 12 12;0 12 12;12 12 12;0 12 12;-15 12 12;0 12 12"/></path><path stroke-dasharray="4" stroke-dashoffset="4" d="M15.76 8.28c-0.5 -0.51 -1.1 -0.93 -1.76 -1.24M15.76 8.28c0.49 0.49 0.9 1.08 1.2 1.72"><animate fill="freeze" attributeName="stroke-dashoffset" begin="lineMdPhoneCallLoop0.begin+0s" dur="2.7s" keyTimes="0;0.111;0.259;0.37;1" values="4;0;0;4;4"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M18.67 5.35c-1 -1 -2.26 -1.73 -3.67 -2.1M18.67 5.35c0.99 1 1.72 2.25 2.08 3.65"><animate fill="freeze" attributeName="stroke-dashoffset" begin="lineMdPhoneCallLoop0.begin+0.2s" dur="2.7s" keyTimes="0;0.074;0.185;0.333;0.444;1" values="6;6;0;0;6;6"/></path></g></svg>
+                    </div>
+                    <div class="infoBox ">
+                      <h3 class="fifthH">Phone Number</h3>
+                      <p>+91 635 183 6898</p>
+                    </div>
+                    <a href="tel:+916351836898" class="absAnchor"></a>
+                  </div>
+                  <div class="cantactCardTop">
+                    <div class="iconBox">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 14 14"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.6"><path d="M9.5 1.5H11a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-10a1 1 0 0 1 1-1h1.5"/><path d="M8.5.5h-3a1 1 0 0 0-1 1V2a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-.5a1 1 0 0 0-1-1M6.303 5.21a.43.43 0 0 0-.43.43v1.207H4.666a.43.43 0 0 0-.43.43v1.395c0 .237.193.43.43.43h1.207v1.207c0 .237.193.43.43.43h1.395a.43.43 0 0 0 .43-.43V9.1h1.207a.43.43 0 0 0 .43-.43V7.277a.43.43 0 0 0-.43-.429H8.128V5.639a.43.43 0 0 0-.43-.429z"/></g></svg>
+                    </div>
+                    <div class="infoBox ">
+                      <h3 class="fifthH">Book Your<br>Appointment</h3>
+                    </div>
+                    <a href="Appointment.html" class="absAnchor"></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        <div id="main-header">
+          <div id="main-header">
             <nav class="mynavbar bg-light">
               <div class="container header">
-                <a class="brandLogo" href="index.html">
+                <a class="brandLogo d-lg-none" href="index.html">
                   <img src="image/Havya_Logo.webp" alt="Havya Women's Hospital Logo">
                 </a>
                 <button class="navToggle">
                   <i class="fa fa-bars" aria-hidden="true"></i>
                 </button>
-                <ul class="navMenu mx-auto mb-2 mb-lg-0">
+                <ul class="navMenu mx-auto ms-lg-0 mb-2 mb-lg-0">
                   <li class="nav-close">
-                    <button class="btn-nav-close"><span class="close-btn">+</span></button>
+                    <button class="btn-nav-close">
+                      <span class="close-btn">+</span>
+                    </button>
                   </li>
-                  <li class="navLi"><a class="navLink" href="index.html">Home</a></li>
                   <li class="navLi">
-                    <a href="#" class="navLink">About 
-                      <span class="toggleSub">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 10l6 6l6-6z"/></svg>
+                    <a class="navLink" href="index.html">Home</a>
+                  </li>
+                  <li class="navLi">
+                    <a href="#" class="navLink">About <span class="toggleSub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 10l6 6l6-6z" />
+                        </svg>
                       </span>
                     </a>
                     <ul class="dropdownList">
-                      <li class="navLi"><a href="havyaProfile.html" class="navLink">About Us</a></li>
-                      <li class="navLi"><a href="meetOurDoctors.html" class="navLink">Meet Our Doctors</a></li>
+                      <li class="navLi">
+                        <a href="havyaProfile.html" class="navLink">About Us</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="meetOurDoctors.html" class="navLink">Meet Our Doctors</a>
+                      </li>
                     </ul>
                   </li>
                   <li class="navLi">
-                    <a href="#" class="navLink">Our Treatments 
-                      <span class="toggleSub">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 10l6 6l6-6z"/></svg>
+                    <a href="#" class="navLink">Our Treatments <span class="toggleSub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 10l6 6l6-6z" />
+                        </svg>
                       </span>
                     </a>
                     <ul class="dropdownList">
-                      <li class="navLi"><a href="maternity.html" class="navLink">Maternity</a></li>
-                      <li class="navLi"><a href="sonography.html" class="navLink">Sonography</a></li>
-                      <li class="navLi"><a href="infertility.html" class="navLink">Infertility</a></li>
-                      <li class="navLi"><a href="gynecology.html" class="navLink">Gynecology</a></li>
-                      <li class="navLi"><a href="familyPlanning.html" class="navLink">Family Planning</a></li>
-                      <li class="navLi"><a href="laparoscopy.html" class="navLink">Laparoscopy</a></li>
+                      <li class="navLi">
+                        <a href="maternity.html" class="navLink">Maternity</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="sonography.html" class="navLink">Sonography</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="infertility.html" class="navLink">Infertility</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="gynecology.html" class="navLink">Gynecology</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="familyPlanning.html" class="navLink">Family Planning</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="laparoscopy.html" class="navLink">Laparoscopy</a>
+                      </li>
                     </ul>
                   </li>
-                 
-                  <li class="navLi"><a href="testimonials.html" class="navLink">Patient Testimonials</a></li>
-                  <li class="navLi"><a href="gallery.html" class="navLink">Gallery</a></li>
-                  <li class="navLi"><a href="contactUs.html" class="navLink">Contact</a></li>
+                  <li class="navLi">
+                    <a href="testimonials.html" class="navLink">Patient Testimonials</a>
+                  </li>
+                  <li class="navLi">
+                    <a href="gallery.html" class="navLink">Gallery</a>
+                  </li>
+                  <li class="navLi">
+                    <a href="contactUs.html" class="navLink">Contact</a>
+                  </li>
                 </ul>
-    
+                <div class="col-auto topheadSocial d-none d-lg-block">
+                  <a href="https://www.facebook.com/people/Havya-womens-hospital/61574666012974/">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                  <a href="https://www.instagram.com/havyawomenshospital/?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw%3D%3D#">
+                    <i class="fa-brands fa-square-instagram"></i>
+                  </a>
+                </div>
               </div>
             </nav>
-       
-        </div>
-`; // Keep your current header HTML here
+          </div>`; // Keep your current header HTML here
+          
   document.getElementById("footer").innerHTML = `<div class="container">
         <div class="footWrap defaultPadding">
           <div class="row">
