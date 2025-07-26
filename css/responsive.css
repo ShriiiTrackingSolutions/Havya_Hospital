@@ -32,6 +32,9 @@
     url("../image/Banner3.webp") center/cover no-repeat;
 }
 
+.emergency-box .footerLinks {
+    font-size: 18px;
+}
 }
 
 @media (max-width: 1024.98px) {
